@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>챔챔하우스 · 소개한 제품</title>
+<style>
+  :root{--bg:#FAF6EB;--ink:#2C2A24;--muted:#6E6A5E;--sage:#5A6B4A;--sage-700:#44543A;--line:#E3DCC6;--card:#fff}
+  *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Apple SD Gothic Neo","Pretendard",sans-serif;line-height:1.5}
+  .wrap{max-width:480px;margin:0 auto;padding:28px 18px 60px}
+  .brand{font-size:12px;letter-spacing:.3em;color:var(--sage);text-align:center;font-weight:700}
+  h1{font-size:20px;text-align:center;margin:8px 0 22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px}
+  .name{font-weight:700;font-size:15px;margin-bottom:10px}
+  .btn{display:block;text-align:center;padding:13px;border-radius:12px;margin-top:8px;text-decoration:none;font-weight:700;font-size:15px}
+  .own{background:var(--sage-700);color:#fff}.coupang,.toss,.naver{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+  .notice{font-size:12px;color:var(--muted);margin-top:22px;text-align:center;line-height:1.7}
+</style></head><body><div class="wrap">
+<div class="brand">CHAMCHAM HOUSE</div><h1>영상에서 소개한 제품</h1>
+<div class="card" data-product="chamcham-001"><div class="name">냉장고 자석 선반 무타공 사이드 옆 틈새 수납 세탁기 마그네틱 걸이 랙</div>
+<div class="ch" data-ch="youtube" hidden><a class="btn own" href="https://smartstore.naver.com/chamchamhouse?utm_source=youtube&amp;utm_medium=shorts&amp;utm_campaign=cc_youtube" rel="nofollow sponsored">챔챔하우스 스토어</a></div><div class="ch" data-ch="tiktok" hidden><a class="btn own" href="https://smartstore.naver.com/chamchamhouse?utm_source=tiktok&amp;utm_medium=shorts&amp;utm_campaign=cc_tiktok" rel="nofollow sponsored">챔챔하우스 스토어</a></div><div class="ch" data-ch="instagram" hidden><a class="btn own" href="https://smartstore.naver.com/chamchamhouse?utm_source=instagram&amp;utm_medium=shorts&amp;utm_campaign=cc_instagram" rel="nofollow sponsored">챔챔하우스 스토어</a></div><div class="ch" data-ch="naverclip" hidden><a class="btn own" href="https://smartstore.naver.com/chamchamhouse?utm_source=naverclip&amp;utm_medium=shorts&amp;utm_campaign=cc_naverclip" rel="nofollow sponsored">챔챔하우스 스토어</a></div><div class="ch" data-ch="blog" hidden><a class="btn own" href="https://smartstore.naver.com/chamchamhouse?utm_source=blog&amp;utm_medium=shorts&amp;utm_campaign=cc_blog" rel="nofollow sponsored">챔챔하우스 스토어</a></div><div class="ch" data-ch="linkhub" hidden><a class="btn own" href="https://smartstore.naver.com/chamchamhouse?utm_source=linkhub&amp;utm_medium=shorts&amp;utm_campaign=cc_linkhub" rel="nofollow sponsored">챔챔하우스 스토어</a></div>
+</div>
+<div class="notice">챔챔하우스가 직접 판매하는 상품입니다<br>※ 영상은 실제 제품 사진을 바탕으로 AI로 제작되었습니다</div>
+</div>
+<script>
+// 채널별 버튼 세트 중 ?c= 에 맞는 것만 보인다 (기본 linkhub). 서버 없이 정적으로 채널 태그를 나눈다.
+var c=new URLSearchParams(location.search).get("c")||"linkhub";var ok=["youtube","tiktok","instagram","naverclip","blog","linkhub"].indexOf(c)>=0?c:"linkhub";
+document.querySelectorAll(".ch").forEach(function(el){el.hidden=el.dataset.ch!==ok});
+</script></body></html>
